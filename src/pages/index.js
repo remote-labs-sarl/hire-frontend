@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {HomeCover, SearchBar} from "@/components/elements/home";
 
 export default function Home() {
   return (
@@ -10,9 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="container">
-            <h1>Home</h1>
-        </div>
+        <HomeCover/>
+          <SearchBar/>
       </main>
     </>
   )
