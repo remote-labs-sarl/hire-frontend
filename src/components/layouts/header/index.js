@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react";
-import {Menu} from "react-feather";
-import ManuMobile from "./manuMobile";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,24 +16,15 @@ const Header = () => {
             window.removeEventListener("scroll", listenScrollEvent);
         };
     }, []);
-    const [isOpen, setOpen] = React.useState(false);
-    const openMenuHandel = () => {
-        setOpen(true);
-    }
 
-    function close() {
-        setOpen(false);
-    }
+
+
 
 
 
     return (
         <>
-            {
-                isOpen ?
-                    <ManuMobile close={close} />
-                    : null
-            }
+
             <div className={isScroll===true ? "header-light" : "header"}>
                 <div className="container-fluid">
                     <div className="header-content">
@@ -53,17 +42,13 @@ const Header = () => {
                             </Link>
                         </div>
                         </div>
-                        <div className="  d-none d-lg-flex d-xl-flex col-8 col-xl-10 col-lg-10 ">
-                            <div className="navigation d-none d-lg-flex d-xl-flex col-12 justify-content-end">
+                        <div className="  d-flex col-6 col-xl-10 col-lg-10 ">
+                            <div className="navigation d-flex col-12 justify-content-end">
                           <button className="btn-site-login">Login</button>
                             </div>
 
                         </div>
-                        <div className="d-block d-lg-none d-xl-none" >
-                            <button className="btn btn-menu"  data-testid="open-menu" onClick={openMenuHandel}>
-                                <Menu color={"#B64377"}  size={40} />
-                            </button>
-                        </div>
+
 
                     </div>
                 </div>
