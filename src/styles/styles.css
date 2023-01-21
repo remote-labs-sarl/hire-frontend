@@ -165,6 +165,12 @@ h2{
     .btn-search-site{
         height: 40px;
     }
+    .card-items-tech{
+        height: 250px;
+    }
+    .car-items-tech-body{
+        height: 200px;
+    }
 
 }
 @media all and (min-width: 751px) {
@@ -246,6 +252,12 @@ h2{
     }
     .btn-search-site{
         height: 50px;
+    }
+    .card-items-tech{
+        height: 300px;
+    }
+    .car-items-tech-body{
+        height: 150px;
     }
 
 }
@@ -610,6 +622,10 @@ ul{
     background-color: #ffffff;
     color: #000;
 }
+.section-contenair-white-2{
+    background-color: rgba(220, 215, 212, 0.26);
+    color: #000;
+}
 .section-contenair-grey{
     background-color: #F9F6EE;
 }
@@ -836,5 +852,33 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.card-items-tech{
+    padding: 20px 11%;
+    background: #ffffff;
+    border-radius: 10px;
+    transition: ease-in-out 0.3s;
+    box-shadow: -1px -3px 31px -31px rgba(0,0,0,0.63);
+    -webkit-box-shadow: -1px -3px 31px -31px rgba(0,0,0,0.63);
+    -moz-box-shadow: -1px -3px 31px -31px rgba(0,0,0,0.63);
 
+}
+.card-items-tech:hover{
+    background: rgba(12, 58, 100, 0.14);
+    transition: ease-in-out 0.3s;
+}
+.car-items-tech-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2%;
+    text-align: center;
+}
+.tech_image{
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: contain;
+    object-position: center;
+
+}
 

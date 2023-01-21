@@ -1,4 +1,5 @@
-import HomeCover from "@/components/elements/home/HomeCover";
-import SearchBar from "@/components/elements/home/SearchBar";
+import HomeCover from "./HomeCover";
+import SearchBar from "./SearchBar";
+import ListeTechnologies from "./ListeTechnologies"
 
-export {HomeCover, SearchBar};
+export {HomeCover, SearchBar, ListeTechnologies};
