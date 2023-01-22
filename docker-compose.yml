@@ -1,0 +1,25 @@
+
+version: '1.0'
+
+services:
+  hire-frontend:
+    build:
+      context: .
+    container_name: hire-frontend
+    hostname: hire-frontend
+    ports:
+      - 8080:8080
+    expose:
+      - 8080:8080
+    environment:
+      SYSTEM_PORT: 8080
+      SYSTEM_HOST: 0.0.0.0
+      LOGSTASH_ENDPOINT: logging.logstash-logstash:4560
+    deploy:
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+
