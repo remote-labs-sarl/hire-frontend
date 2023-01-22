@@ -844,30 +844,33 @@ ul{
     align-items: center;
 }
 .card-items-tech{
-    padding: 20px 11%;
+    padding: 15px 11%;
     background: #ffffff;
     border-radius: 10px;
     transition: ease-in-out 0.3s;
     box-shadow: -1px -3px 31px -31px rgba(0,0,0,0.63);
     -webkit-box-shadow: -1px -3px 31px -31px rgba(0,0,0,0.63);
     -moz-box-shadow: -1px -3px 31px -31px rgba(0,0,0,0.63);
+    border: rgba(12, 58, 100, 0.07) solid 1px   !important;
 
 }
 .card-items-tech:hover{
-    background: rgba(12, 58, 100, 0.14);
-    transition: ease-in-out 0.3s;
+    border: var(--color-site-b) solid 1px   !important;
 }
 .car-items-tech-body{
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 2%;
     text-align: center;
+
 }
 .tech_image{
     width: 150px !important;
-    height: 150px !important;
+    height: 200px !important;
+    background: #ffffff;
     object-fit: contain;
     object-position: center;
 

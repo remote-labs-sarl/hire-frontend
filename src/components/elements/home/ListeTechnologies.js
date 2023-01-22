@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 const ListeTechnologies =({data})=>{
 
     return(
-        <div className="section-contenair section-contenair-white-2 p-3  ">
+        <div className="section-contenair section-contenair-white p-3  ">
             <div className="container-xl container-lg ">
                 {data?.content?.length > 0
                     ?
