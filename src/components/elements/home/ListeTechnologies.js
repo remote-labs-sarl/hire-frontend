@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-
+import Error404 from "../../../../public/assets/lottie/404.json";
+import Lottie from "lottie-react";
 const ListeTechnologies =({data})=>{
 
     return(
         <div className="section-contenair section-contenair-white-2 p-3  ">
             <div className="container-xl container-lg ">
-                {data.content
+                {data?.content?.length > 0
                     ?
-                    <div className="row d-flex justify-content-center align-items-center">
+                    <div className="row d-flex  align-items-center">
 
                         {data.content.map((item) => {
 
@@ -32,7 +33,11 @@ const ListeTechnologies =({data})=>{
 
                 </div>
                     :
-                    <div>None</div>
+                    <div className="col-12 d-flex justify-content-center align-content-center">
+                        <div className="col-4">
+                            <Lottie animationData={Error404} />
+                        </div>
+                    </div>
                 }
 
             </div>

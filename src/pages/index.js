@@ -25,6 +25,7 @@ let data=null;
     try {
         const res = await api.get('/technologies?page=0&size=30')
         const data = await res.data
+        console.log("data", data)
         return { props: { data } }
     }catch (e) {
         console.log("error", e)
