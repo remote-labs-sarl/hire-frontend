@@ -8,11 +8,11 @@ services:
     container_name: hire-frontend
     hostname: hire-frontend
     ports:
-      - 8080:8080
+      - 3000:3000
     expose:
-      - 8080:8080
+      - 3000:3000
     environment:
-      SYSTEM_PORT: 8080
+      SYSTEM_PORT: 3000
       SYSTEM_HOST: 0.0.0.0
       LOGSTASH_ENDPOINT: logging.logstash-logstash:4560
     deploy:
