@@ -8,7 +8,11 @@ export default function Home({data }) {
     <>
       <Head>
         <title>Hire | Home page</title>
+        <meta property='og:title'  content='Hire | Home page'/>
+        <meta name='twitter:title' content='Hire | Home page'/>
         <meta name="description" content="Find the best with RemoteLabs" />
+        <meta property='og:description'  content='Find the best with RemoteLabs'/>
+        <meta name='twitter:description' content='Find the best with RemoteLabs'/>
       </Head>
       <main className="">
         <HomeCover/>
