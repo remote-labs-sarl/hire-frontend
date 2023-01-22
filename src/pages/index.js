@@ -27,7 +27,7 @@ export default function Home({data }) {
 export async function  getServerSideProps() {
 let data=null;
     try {
-        const res = await api.get('/technologies?page=0&size=30')
+        const res = await api.get('/technologies?page=0&size=20')
         const data = await res.data
         console.log("data", data)
         return { props: { data } }
