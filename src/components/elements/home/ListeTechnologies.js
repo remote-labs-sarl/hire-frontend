@@ -34,7 +34,7 @@ const ListeTechnologies =({data})=>{
                 </div>
                     :
                     <div className="col-12 d-flex justify-content-center align-content-center">
-                        <div className="col-4">
+                        <div className="col-12 col-md-6 col-xl-5 col-lg-5">
                             <Lottie animationData={Error404} />
                         </div>
                     </div>
