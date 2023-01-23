@@ -7,8 +7,8 @@ const Footer=()=>{
     return(
         <div className="footer">
             <Container>
-                <div className="row pt-3 pb-3 d-flex align-items-center ">
-                    <div className="col-12 col-xl-3 col-lg-3
+                <div className="row pt-3 pb-3 d-flex  align-items-center">
+                    <div className="col-12 col-xl-4 col-lg-4
                      align-items-center
                     justify-content-start "
                     >
@@ -21,7 +21,7 @@ const Footer=()=>{
                                 height={50} />
                         </Link>
                     </div>
-                    <div className="col-12 col-lg-4 col-xl-4 d-flex justify-content-center align-content-center ">
+                    <div className="col-12 col-lg-4 col-xl-4 d-flex text-center justify-content-center align-content-center ">
                         <p className="text-white">© {new Date().getFullYear()} <strong> RemoteLabs</strong> -All rights reserved </p>
                     </div>
                     <div
