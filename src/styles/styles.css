@@ -488,7 +488,7 @@ ul{
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .logo-image{
     height: 40px !important;
@@ -512,6 +512,9 @@ ul{
     height: auto;
 }
 .right-section-header{
+    min-height: 40vh;
+}
+.left-section-header{
     min-height: 40vh;
 }
 .cover_home{
@@ -856,6 +859,7 @@ ul{
 }
 .card-items-tech:hover{
     border: var(--color-site-b) solid 1px   !important;
+    cursor: pointer;
 }
 .car-items-tech-body{
     height: 100%;
