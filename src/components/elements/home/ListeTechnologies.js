@@ -3,7 +3,7 @@ import Image from "next/image";
 import Error404 from "../../../../public/assets/lottie/404.json";
 import Lottie from "lottie-react";
 const ListeTechnologies =({data})=>{
-
+    console.log("response",data)
     return(
         <div className="section-contenair section-contenair-white p-3  ">
             <div className="container-xl container-lg ">

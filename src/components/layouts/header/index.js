@@ -33,7 +33,7 @@ const Header = () => {
                         <div className="logo-container">
                             <Link href={"/"} className="logo-a">
                                     <Image
-                                        src={"/assets/logos/2.png"}
+                                        src={"/assets/logos/l11.png"}
                                         alt="cover"
                                         className="logo-image"
                                         width={300}

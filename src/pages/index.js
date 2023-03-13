@@ -27,8 +27,8 @@ export default function Home({data }) {
 export async function  getServerSideProps() {
 let data=null;
     try {
-        const res = await api.get('/technologies?page=0&size=20')
-        const data = await res.data
+        const res = await api.get('public/tech-skills?page=0&size=20')
+         data = await res.data
         console.log("data", data)
         return { props: { data } }
     }catch (e) {
